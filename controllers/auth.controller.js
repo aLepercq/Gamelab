@@ -1,13 +1,11 @@
 const UserModel = require('../models/user.model');
 const jwt = require('jsonwebtoken');
-const {signUpErrors} = require("../utils/error.utils");
+const {signUpErrors, logInErrors} = require("../utils/error.utils");
 
 const maxAge = 21 * 24 * 60 * 60 * 1000;
 
 const createToken = (id) => {
-    return jwt.sign({id}, process.env.TOKEN_SECRET, {
-        expiresIn: maxAge
-    })
+    return jwt.sign({id}, process.env.TOKEN_SECRET, {expiresIn: maxAge}, {})
 };
 
 module.exports.signUp = async(req, res) => {
@@ -16,13 +14,14 @@ module.exports.signUp = async(req, res) => {
     try{
         const user = await UserModel.create({pseudo, email, password});
         res.status(201).json({user: user._id});
-    }catch(err){
-        const errors = signUpErrors(err);
-        res.status(200).send(errors);
     }
-}
+    catch(err){
+        const errors = signUpErrors(err);
+        res.status(200).send({errors});
+    }
+};
 
-module.exports.signIn = async (req, res) => {
+module.exports.logIn = async (req, res) => {
     const { email, password } = req.body;
 
     try{
@@ -31,11 +30,12 @@ module.exports.signIn = async (req, res) => {
         res.cookie("jwt", token, { httpOnly: true, maxAge: maxAge});
         res.status(200).json({user: user._id});
     } catch (err) {
-        res.status(400).json(err);
+        const errors = logInErrors(err);
+        res.status(400).json({errors});
     }
-}
+};
 
 module.exports.logout = (req, res) => {
     res.cookie("jwt", '', {maxAge: 1});
     res.redirect('/');
-}
+};

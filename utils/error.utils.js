@@ -1,17 +1,31 @@
 module.exports.signUpErrors = (err) => {
-    let errors = { pseudo: "", email: "", password: "mauvais mot de passe"}
+    let errors = { pseudo: "", email: "", password: "" };
 
-    if(err.message.includes('pseudo'))
-        errors.pseudo = "pseudo incorrect ou déja utilisé";
+    if (err.message.includes("pseudo"))
+        errors.pseudo = "Pseudo incorrect ou déjà pris";
 
-    if(err.message.includes("email"))
-        errors.email = "adresse mail incorrecte";
+    if (err.message.includes("email")) errors.email = "Email incorrect";
 
-    if(err.message.includes("password"))
-        errors.email = "Le mot de passe doit faire 6 caractères minimum."
+    if (err.message.includes("password"))
+        errors.password = "Le mot de passe doit faire 6 caractères minium";
 
-    if(err.code === 11000 && err.message.includes("email"))
-        errors.email = "Cet email est déja enregistré."
+    if (err.code === 11000 && err.message.includes("pseudo"))
+        errors.pseudo = "Ce pseudo est déjà pris";
 
-    return errors
-}
+    if (err.code === 11000 && err.message.includes("email"))
+        errors.email = "Cet email est déjà enregistré";
+
+    return errors;
+};
+
+module.exports.logInErrors = (err) => {
+    let errors = { email: '', password: ''}
+
+    if (err.message.includes("email"))
+        errors.email = "Email inconnu";
+
+    if (err.message.includes('password'))
+        errors.password = "Le mot de passe ne correspond pas"
+
+    return errors;
+};
