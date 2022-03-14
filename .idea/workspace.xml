@@ -3,13 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="779ddc6e-1010-468a-94cf-581f0b57ae06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.middleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/log/logInForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/log/logInForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/log/signUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/log/signUpForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Profil.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Profil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/error.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/error.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +31,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,7 +88,9 @@
       <updated>1646986374200</updated>
       <workItem from="1646986375899" duration="775000" />
       <workItem from="1646987174823" duration="22795000" />
-      <workItem from="1647129807973" duration="12305000" />
+      <workItem from="1647129807973" duration="12608000" />
+      <workItem from="1647177857493" duration="7009000" />
+      <workItem from="1647197512911" duration="17005000" />
     </task>
     <servers />
   </component>

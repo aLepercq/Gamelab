@@ -5,8 +5,19 @@ const userRoutes = require('./routes/user.routes');
 require("dotenv").config({path:"./config/.env"});
 require("./config/db");
 const {checkUser, requireAuth} = require("./middleware/auth.middleware");
+const cors = require("cors");
 const app = express();
 
+const corsOptions = {
+    origin: "http://localhost:3000",
+    credentials: true,
+    'allowedHeaders': ['sessionId', 'content-Type'],
+    'exposedHeaders': ['sessionId'],
+    'methods': ['GET,HEAD,PUT,PATCH,POST,OPTIONS,DELETE'],
+    'preflightContinue': false
+}
+
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
@@ -23,5 +34,4 @@ app.use('/api/user', userRoutes);
 //server
 app.listen(process.env.PORT, () => {
     console.log(`Listening on port ${process.env.PORT}`);
-}
-)
+});
