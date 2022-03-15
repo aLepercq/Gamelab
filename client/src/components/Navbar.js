@@ -2,6 +2,7 @@ import React, {useContext, useReducer} from 'react';
 import {NavLink} from "react-router-dom";
 import {UidContext} from "./AppContext";
 import {useSelector} from "react-redux";
+import Profil from "../pages/Profil";
 
 const Navbar = () => {
     const uid = useContext(UidContext);
@@ -14,8 +15,8 @@ const Navbar = () => {
                 <div className="logo">
                     <NavLink exact to="/">
                         <div className="logo">
-                            <img src="./img/icon3_PT.png" alt="icon"/>
-                            <h3>Princess Tourney</h3>
+                            <img src="./img/icon_GL.png" alt="icon"/>
+                            <h3>Gamelab</h3>
                         </div>
                     </NavLink>
                 </div>
@@ -27,14 +28,16 @@ const Navbar = () => {
                                 <h5>Bienvenue {userData.pseudo}</h5>
                             </NavLink>
                         </li>
-                        <img src="./img/icons/logout.svg" alt="login"/>
+                        <NavLink exact to="/profil">
+                            <img src={userData.picture} alt="login" className="profilIcon"/>
+                        </NavLink>
                     </ul>
                 ) : (
                     <ul>
                         <li></li>
                         <li>
                             <NavLink exact to="/profil">
-                                <img src="./img/icons/login.svg" alt="login"/>
+                                <img src={userData.picture} alt="login" className="profilIcon Login"/>
                             </NavLink>
                         </li>
                     </ul>
