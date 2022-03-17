@@ -9,15 +9,24 @@ import rootReducer from "./reducers";
 
 //dev tools
 import {composeWithDevTools} from "redux-devtools-extension";
+import {BrowserRouter} from "react-router-dom";
+import {getUsers} from "./actions/users.actions";
+import {getPosts} from "./actions/post.actions";
 
 const store = createStore(
     rootReducer, composeWithDevTools(applyMiddleware(thunk))
 )
 
-ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-  document.getElementById('root')
-);
+store.dispatch(getUsers());
+store.dispatch(getPosts());
 
+ReactDOM.render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <Provider store={store}>
+                <App/>
+            </Provider>
+        </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById('root')
+);

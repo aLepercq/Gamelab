@@ -2,28 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779ddc6e-1010-468a-94cf-581f0b57ae06" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/actions/user.actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Post/DeleteCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/icon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/icon3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/icon3_PT.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/img/icon_GL.png" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/img/icon_GL.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/actions/user.action.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/actions/user.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/actions/user.actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/LeftNav.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/Profil.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Profil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Profil/UpdateProfil.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profil/UpdateProfil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Trending.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/reducers/user.reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/user.reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/styles/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/_leftNav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/_pageNav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/styles/components/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/pages/_profil.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/_profil.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/pages/_trending.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/_game.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/upload.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/upload.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/auth.middleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/auth.middleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/user.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/error.utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/error.utils.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +47,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,6 +75,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -65,7 +83,10 @@
     <property name="javascript.nodejs.core.library.configured.version" value="16.13.2" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.11.26" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -105,11 +126,27 @@
       <workItem from="1647197512911" duration="18531000" />
       <workItem from="1647243335043" duration="12068000" />
       <workItem from="1647330931179" duration="16147000" />
-      <workItem from="1647372348618" duration="214000" />
+      <workItem from="1647372348618" duration="660000" />
+      <workItem from="1647373105781" duration="2127000" />
+      <workItem from="1647381731304" duration="10982000" />
+      <workItem from="1647397382330" duration="16000" />
+      <workItem from="1647431223747" duration="29884000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server.js</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

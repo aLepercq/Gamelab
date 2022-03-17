@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Trending = () => {
+const Game = () => {
     return (
         <div>
-            Trending page
+            Princess Tourney
         </div>
     );
 };
 
-export default Trending;
+export default Game;

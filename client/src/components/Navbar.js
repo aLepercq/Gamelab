@@ -1,12 +1,21 @@
-import React, {useContext, useReducer} from 'react';
+import React, {useContext} from 'react';
 import {NavLink} from "react-router-dom";
 import {UidContext} from "./AppContext";
 import {useSelector} from "react-redux";
-import Profil from "../pages/Profil";
+import axios from "axios";
 
 const Navbar = () => {
     const uid = useContext(UidContext);
     const userData = useSelector((state) => state.userReducer);
+
+    const handleLogout = (e) => {
+        e.preventDefault();
+
+        axios({
+            method: "get",
+            url: `${process.env.REACT_APP_API_URL}api/user/logout`,
+        })
+    };
 
     return (
 
@@ -20,6 +29,21 @@ const Navbar = () => {
                         </div>
                     </NavLink>
                 </div>
+                <div className="page-nav-container">
+                    <div className="icons">
+                        <div className="icons-bis">
+                            <NavLink to="/" exact activeClassName="active-page-nav">
+                                <img src="./img/icons/home.svg" alt="home"/>
+                            </NavLink>
+                            <NavLink to="/game" exact activeClassName="active-page-nav">
+                                <img src="./img/icons/games_2.png" alt="trending"/>
+                            </NavLink>
+                            <NavLink to="/profil" exact activeClassName="active-page-nav">
+                                <img src="./img/icons/user.svg" alt="profil"/>
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
                 {uid ? (
                     <ul>
                         <li></li>
@@ -29,7 +53,10 @@ const Navbar = () => {
                             </NavLink>
                         </li>
                         <NavLink exact to="/profil">
-                            <img src={userData.picture} alt="login" className="profilIcon"/>
+                            <div className="icon-container">
+                                <img src={userData.picture} alt="user-icon" className="profilIcon loggedIn"
+                                     onClick={handleLogout}/>
+                            </div>
                         </NavLink>
                     </ul>
                 ) : (
@@ -37,7 +64,10 @@ const Navbar = () => {
                         <li></li>
                         <li>
                             <NavLink exact to="/profil">
-                                <img src={userData.picture} alt="login" className="profilIcon Login"/>
+                                <div className="icon-container">
+                                    <img src="./img//random-user.png" alt="default-icon"
+                                         className="profilIcon"/>
+                                </div>
                             </NavLink>
                         </li>
                     </ul>

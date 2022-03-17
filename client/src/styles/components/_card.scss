@@ -3,7 +3,7 @@
   grid-template-columns: 66px 1fr;
   border: 2px solid $color-2;
   margin: 10px;
-  padding: 16px;
+  padding: 20px;
   border-radius: 20px;
   margin: 8px auto;
   position: relative;
@@ -39,6 +39,7 @@
         border-radius: 14px;
       }
     }
+
     @media screen and(max-width: 590px) {
       position: absolute;
       transform: translate(17px, 18px);
@@ -49,6 +50,7 @@
     @media screen and(max-width: 590px) {
       margin-left: 18px;
     }
+
     .card-header {
       display: flex;
       justify-content: space-between;
@@ -96,6 +98,7 @@
           .fas {
             color: $color-1;
           }
+
           .far {
             color: $color-2;
           }
@@ -111,6 +114,7 @@
         }
       }
     }
+
     p {
       margin: 3px 0 9px;
       font-size: 1.1rem;
@@ -119,6 +123,7 @@
         margin-top: -18px;
       }
     }
+
     .update-post {
       textarea {
         font-size: 1.3rem;
@@ -126,6 +131,7 @@
         padding: 10px;
         border-radius: 20px 20px 6px 20px;
       }
+
       .button-container {
         .btn {
           background: $color-2;
@@ -140,18 +146,23 @@
         }
       }
     }
+
     .card-pic {
       width: 100%;
+      max-height: 400px;
+      max-width: 600px;
       border-radius: 6px;
       margin-top: 12px;
       box-shadow: 0 0 3px rgba(51, 51, 51, 0.342);
     }
+
     iframe {
       width: 100%;
       min-height: 330px;
       border-radius: 6px;
       box-shadow: 0 0 3px rgba(51, 51, 51, 0.342);
     }
+
     .button-container {
       justify-content: flex-end;
       display: flex;
@@ -175,6 +186,7 @@
         }
       }
     }
+
     .card-footer {
       display: flex;
       align-items: center;
@@ -192,6 +204,7 @@
           transform: scale(1.2);
         }
       }
+
       .comment-icon,
       .like-container {
         display: flex;
@@ -204,11 +217,13 @@
         }
       }
     }
+
     .comment-container.client {
       background: $color-4;
       border: none;
       border-radius: 20px 20px 6px 20px;
     }
+
     .comment-container {
       display: grid;
       grid-template-columns: 50px 1fr;
@@ -229,6 +244,7 @@
           width: 37px;
         }
       }
+
       .comment-header {
         display: flex;
         justify-content: space-between;
@@ -243,6 +259,7 @@
           h3 {
             font-family: $font-1;
           }
+
           span {
             transform: translateX(6px);
           }
@@ -254,11 +271,14 @@
           font-family: $font-1;
         }
       }
+
       p {
         margin-top: 8px;
       }
+
       .edit-comment {
         color: $color-2;
+
         img {
           float: right;
           margin-left: 10px;
@@ -275,6 +295,7 @@
 
         .edit-comment-form {
           margin-top: 14px;
+
           label {
             background: $white;
             color: $color-1;
@@ -289,6 +310,7 @@
               transform: scale(1.05);
             }
           }
+
           input[type="text"] {
             margin: 4px 0;
             background: $white;
@@ -297,6 +319,7 @@
             width: 100%;
             border-radius: 6px 20px 6px 20px;
           }
+
           .btn {
             display: flex;
             align-items: center;
@@ -318,6 +341,7 @@
                 transform: translate(-5px, 0);
               }
             }
+
             input[type="submit"] {
               background: $color-2;
               width: inherit;
@@ -332,6 +356,7 @@
         }
       }
     }
+
     .comment-form {
       margin-top: 6px;
 
@@ -346,6 +371,7 @@
           box-shadow: 0 0 2px rgba(51, 51, 51, 0.5);
         }
       }
+
       input[type="submit"] {
         margin-top: 4px;
         padding: 12px 16px;
@@ -361,6 +387,7 @@
           width: 130px;
         }
       }
+
       button {
         float: right;
         background: $color-1;
@@ -371,6 +398,7 @@
         }
       }
     }
+
     .like-container {
       span {
         font-size: 1.02rem;
@@ -378,15 +406,18 @@
         transform: translate(8px, -1px);
       }
     }
+
     .fa-share-alt {
       transform: translate(0, 2px);
     }
   }
+
   .update-post {
     textarea {
       width: 100% !important;
       height: 80px;
     }
+
     .button-container {
       text-align: right;
 
