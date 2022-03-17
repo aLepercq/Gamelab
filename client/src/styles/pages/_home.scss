@@ -2,17 +2,14 @@
   display: grid;
   width: 100%;
   max-width: 1920px;
-  grid-template-columns: 20vw 40vw 20vw;
+  grid-template-columns: 20fr 40fr 20fr;
+  grid-gap: 2px;
   overflow: hidden;
   position: relative;
 
   @media screen and(max-width: 1920px) {
-    grid-template-columns: 20vw 40vw 20vw;
-  }
-
-  @media screen and(max-width: 990px) {
-    grid-template-columns: 20vw 40vw 20vw;
-    margin: 58px 20px 50px
+    grid-template-columns: 20fr 40fr 20fr;
+    margin: 48px 0 0 0;
   }
 
   @media screen and(max-width: 590px) {
@@ -22,13 +19,21 @@
 
   .left-side {
     position: relative;
-    width: 20%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 100%;
     margin: 0 14px 0 0px;
   }
 
   .main {
     position: relative;
-    width: 60%;
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    padding-inline: 10px;
+    padding-top: 10px;
+    border-left: 1px solid $color-1;
+    border-right: 1px solid $color-1;
 
     .home-header {
       margin: 0 auto 12px;
@@ -91,8 +96,10 @@
 
   .right-side {
     position: relative;
-    width: 20%;
-    margin: 0px 0 0 14px;
+    width: 100%;
+    margin: 0 0 0 14px;
+    grid-column-start: 3;
+    grid-column-end: 3;
 
     @media screen and(max-width: 990px) {
       display: none;

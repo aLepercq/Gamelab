@@ -1,10 +1,12 @@
 {
-  "name": "princesstourney",
+  "name": "gamelab",
   "version": "1.0.0",
   "description": "Web version of the original Love Letter japanese card game",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "backend": "nodemon server.js --ignore './frontend-src/' --ignore './public'",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",

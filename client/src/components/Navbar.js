@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import {UidContext} from "./AppContext";
 import {useSelector} from "react-redux";
 import axios from "axios";
+import Logout from "./log/Logout";
 
 const Navbar = () => {
     const uid = useContext(UidContext);
@@ -35,8 +36,11 @@ const Navbar = () => {
                             <NavLink to="/" exact activeClassName="active-page-nav">
                                 <img src="./img/icons/home.svg" alt="home"/>
                             </NavLink>
+                            <NavLink to="/trending" exact activeClassName="active-page-nav">
+                                <img src="./img/icons/rocket.svg" alt="trending"/>
+                            </NavLink>
                             <NavLink to="/game" exact activeClassName="active-page-nav">
-                                <img src="./img/icons/games_2.png" alt="trending"/>
+                                <img src="./img/icons/games_2.png" alt="games"/>
                             </NavLink>
                             <NavLink to="/profil" exact activeClassName="active-page-nav">
                                 <img src="./img/icons/user.svg" alt="profil"/>
@@ -58,6 +62,7 @@ const Navbar = () => {
                                      onClick={handleLogout}/>
                             </div>
                         </NavLink>
+                        <Logout/>
                     </ul>
                 ) : (
                     <ul>

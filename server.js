@@ -10,6 +10,8 @@ const cors = require("cors");
 
 const app = express();
 
+const PORT = process.env.PORT || 3000;
+
 const corsOptions = {
     origin: "http://localhost:3000",
     credentials: true,
@@ -35,6 +37,6 @@ app.use('/api/user', userRoutes);
 app.use('/api/post', postRoutes);
 
 //server
-app.listen(process.env.PORT || 3000, () => {
+app.listen(PORT, () => {
     console.log(`Listening on port ${process.env.PORT}`);
 });
