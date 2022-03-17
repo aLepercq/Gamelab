@@ -1,2 +1,2 @@
-# princessTourney
-Web version of the original Love Letter japanese card game
+# Gamelab
+Steam like app with gamestore, community page like twitter and more.
