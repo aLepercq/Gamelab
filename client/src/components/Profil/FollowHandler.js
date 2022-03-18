@@ -37,7 +37,7 @@ const FollowHandler = ({idToFollow, type}) => {
             {isFollowed === false && !isEmpty(userData) && (
                 <span onClick={handleFollow}>
           {type === "suggestion" && <button className="follow-btn">Suivre</button>}
-                    {type === "card" && <img src="./img/icons/check.svg" alt="check"/>}
+                    {type === "card" && <img src="./img/icons/follow.png" alt="check"/>}
         </span>
             )}
         </>

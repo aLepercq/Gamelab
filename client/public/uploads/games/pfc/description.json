@@ -1,0 +1,8 @@
+{
+	"name" : "Pierre Feuille Ciseaux",
+	"autor": "Ryme YOUB",
+	"tags": ["puzzle", "jeu", "hasard", "chance"], 
+	"image" : "logo.jpg",
+	"description": "Ce jeu permet de jouer à Pierre Feuille Ciseaux contre l'ordinateur"
+
+}

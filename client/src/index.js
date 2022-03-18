@@ -13,6 +13,7 @@ import {BrowserRouter} from "react-router-dom";
 import {getUsers} from "./actions/users.actions";
 import {getPosts} from "./actions/post.actions";
 
+
 const store = createStore(
     rootReducer, composeWithDevTools(applyMiddleware(thunk))
 )

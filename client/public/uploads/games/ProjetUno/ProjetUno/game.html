@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_game.css">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.1formatik.com/images/favicon/favicon-16x16.png">
+    <title>Projet UNO</title>
+</head>
+<body>
+    <div class='ordi-box'>
+        <div class='ordi-main'>
+            <img src="images/back.png" alt="">
+            <img src="images/back.png" alt="">
+            <img src="images/back.png" alt="">
+            <img src="images/back.png" alt="">
+            <img src="images/back.png" alt="">
+            <img src="images/back.png" alt="">
+            <img src="images/back.png" alt="">
+        </div>
+        <div class='cpu-animation hidden'>
+            <img id='ordi-uno' src="images/uno!.png" alt="">
+        </div>
+    </div>
+	
+	<img id="logo_fixe" src="cnam.png" alt="">
+	
+    <div class='zone-jeu'>
+        <div class='score'>
+			<h3> Jeu du Uno <h3/>
+			<div id='seperator'></div>
+            <p class='ordi-score-titre'>ORDINATEUR : <span id='ordi-score'></span></p>
+            <div id='seperator'></div>
+            <p class='joueur-score-titre'>JOUEUR : <span id='joueur-score'></span></p>
+        </div>
+        <div class='joueur-pile'>
+            <img src="images/blue2.png" alt="">
+        </div>
+        <div class='draw-pile'>
+            <img src="images/back.png" alt="">
+        </div>
+        <img id="draw-card" class='hidden' src="images/back.png" alt="">
+    </div>
+    <div class='end-of-round hidden'>
+        <p class='round'>X as gagné la partie !</p>
+    </div>
+    <div class='end-of-game hidden'>
+        <p class='jeu'>X as gagné le jeu !</p>
+        <button class='play-again'>Encore !</button>
+    </div>
+	    <div class='end-of-round hidden'>
+        <p class='round'>X as gagné la partie !</p>
+    </div>
+    <div class='end-of-game hidden'>
+        <p class='jeu'>X as gagné le jeu !</p>
+        <button class='play-again'>Encore !</button>
+    </div>
+    <div class='player-box'>
+        <div class='player-hand'>
+            <img src="images/blue9.png" alt="">
+            <!-- <img src="images/wild14.png" alt="">
+            <img src="images/red1.png" alt="">
+            <img src="images/green3.png" alt="">
+            <img src="images/blue0.png" alt="">
+            <img src="images/red10.png" alt="">
+            <img src="images/yellow11.png" alt=""> -->
+        </div>
+        <div class='player-animation hidden'>
+            <img id='joueur-uno' src="images/uno!.png" alt="">
+        </div>
+    </div>
+    <div class='color-picker'>
+        <p>Selectionne une couleur :</p>
+        <div>
+            <button class='red'>Rouge</button>
+            <button class='green'>Vert</button>
+            <button class='blue'>Blueu</button>
+            <button class='yellow'>Jaune</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 

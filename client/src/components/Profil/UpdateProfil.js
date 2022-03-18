@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, {createContext, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import UploadImg from "./UploadImg";
 import {updateBio} from "../../actions/user.actions";
 import {dateParser} from "../Utils";
 import FollowHandler from "./FollowHandler";
+import useLocalStorage from "use-local-storage";
 
 const UpdateProfil = () => {
     const [bio, setBio] = useState('');
@@ -18,6 +19,16 @@ const UpdateProfil = () => {
     const handleUpdate = () => {
         dispatch(updateBio(userData._id, bio));
         setUpdateForm(false);
+    };
+
+    //theme
+    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
+    const switchTheme = () => {
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+        setTheme(newTheme);
+        console.log(theme);
     };
 
     return (
@@ -118,8 +129,20 @@ const UpdateProfil = () => {
                     </div>
                 </div>
             )}
+            <div className="Settings">
+                <div className="theme-selector">
+                    Select theme
+                    <br/>
+                    <label className="switch">
+                        <input type="checkbox"/>
+                        <span className="slider round" onClick={switchTheme}/>
+                    </label>
+                </div>
+
+            </div>
         </div>
     );
 };
 
 export default UpdateProfil;
+export var theme;

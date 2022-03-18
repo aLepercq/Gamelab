@@ -1,12 +1,18 @@
 @import './settings';
 @import './pages/home';
+@import './pages/game.scss';
+@import './pages/profil.scss';
+@import './pages/trending';
+
 @import './components/navbar.scss';
+@import './components/pageNav.scss';
 @import './components/card.scss';
 @import './components/connectionForm.scss';
-@import './pages/profil.scss';
+@import './components/trends.scss';
+
+@import './components/newGameForm.scss';
+@import './components/cardGame.scss';
+
 @import './components/newPostForm.scss';
 @import './components/friendsHint.scss';
 @import './components/trends.scss';
-@import 'src/styles/components/pageNav';
-@import 'src/styles/pages/trending';
-@import 'src/styles/pages/game';

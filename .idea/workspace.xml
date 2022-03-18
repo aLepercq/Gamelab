@@ -2,16 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="779ddc6e-1010-468a-94cf-581f0b57ae06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/components/Game/BuyButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Game/CardGame.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Game/CardReviews.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Game/DeleteCardGame.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Game/EditDeleteReview.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/components/Game/NewGameForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/log/Logout.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/log/Logout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Post/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Post/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Profil/FollowHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profil/FollowHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Profil/UpdateProfil.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Profil/UpdateProfil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Thread.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ThreadPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/_settings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/_settings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/components/_pageNav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/components/_pageNav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/styles/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/styles/pages/_game.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/_game.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/styles/pages/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/styles/pages/_profil.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/styles/pages/_profil.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +41,8 @@
       <list>
         <option value="package.json" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -59,7 +76,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.13.2" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.11.26" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/styles/components" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -68,6 +85,10 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Antoine\CNAM\3A\IHM\app\Gamelab\client\src\styles\components" />
+      <recent name="D:\Antoine\CNAM\3A\IHM\app\Gamelab\client\src\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Antoine\CNAM\3A\IHM\app\princessTourney\client\src" />
     </key>
@@ -108,23 +129,15 @@
       <workItem from="1647373105781" duration="2127000" />
       <workItem from="1647381731304" duration="10982000" />
       <workItem from="1647397382330" duration="16000" />
-      <workItem from="1647431223747" duration="32748000" />
+      <workItem from="1647431223747" duration="33425000" />
+      <workItem from="1647504782824" duration="23601000" />
+      <workItem from="1647543571721" duration="22251000" />
+      <workItem from="1647590772675" duration="356000" />
+      <workItem from="1647591283198" duration="5385000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/server.js</url>
-          <line>26</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

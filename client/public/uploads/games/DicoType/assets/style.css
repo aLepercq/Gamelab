@@ -1,0 +1,79 @@
+body {
+    background-color: #38444d;
+    overflow-x: hidden;
+    width: 100;
+}
+
+p {
+    color: #f5f6fa
+}
+
+input {
+    width: 250pt;
+    font-size: 28pt;
+    color: #130f40;
+    border-radius: 3px;
+    text-align: center;
+}
+
+input#jump-input {
+	width: 150pt;
+    font-size: 16pt;
+	text-align: left;
+}
+
+.jump-to {
+    float: left;
+    margin-right: 8pt;
+    font-size: 20pt;
+}
+
+.score {
+    font-size: 30pt;
+}
+
+.w {
+    display: inline;
+    margin: 5pt;
+}
+
+.w1 {
+    color: grey;
+    font-size: 20pt;
+}
+
+.w2 {
+    color: grey;
+    font-size: 26pt;
+}
+
+.w3 {
+    color: #fff;
+    background-color: 'grey';
+    border-radius: 3pt;
+    font-size: 34pt;
+}
+.w4 {
+    color: #ddd;
+    font-size: 30pt;
+}
+
+.nb_mots {
+	display: inline;
+    margin: 5pt;
+    color: #ddd;
+    background-color: 'grey';
+    border-radius: 3pt;
+    font-size: 28pt;	
+}
+
+#main-input {
+    margin-top: 50pt;
+}
+
+.l {
+    font-size: 32pt;
+    padding-left: 5pt;
+    border-top-left-radius: 5pt;
+    border-bottom-left-radius: 5pt;
+}

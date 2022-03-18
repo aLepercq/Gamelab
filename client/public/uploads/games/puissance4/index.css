@@ -1,0 +1,48 @@
+table.p4grid {
+    background: #000000;
+}
+
+td.p4grid {
+    background: #FFFFFF;
+    width: 14vh;
+    height: 14vh;
+    padding: 0;
+    border: solid 2px;
+    text-align: center;
+}
+
+table.scoretable {
+    border-collapse: collapse;
+    background: #000000;
+}
+
+td.scoretable {
+    background: #FFFFFF;
+    width: 14vh;
+    height: 5vh;
+    padding: 0;
+    border: solid 1px;
+    text-align: center;
+}
+
+.scoreboard {
+    position: absolute;
+    top: 40px;
+    left: 1050px;
+}
+
+.gamegrid {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.statusinfo {
+    position: absolute;
+    top: 830px;
+    left: 50px;
+}
+
+p {
+	font-size: 0.7em;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Uno</title>
+    <link rel="stylesheet" href="index_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://www.1formatik.com/images/favicon/favicon-16x16.png">
+	
+	<EMBED NAME='TrenteSepDeux' SRC='audio/acidjazz.mp3' LOOP="true" AUTOSTART="true"
+	HIDDEN="true" WIDTH="0" HEIGHT="0">
+	
+</head>
+<body>
+    
+    <div class="lignes">
+        <div class="l1"></div>
+        <div class="l2"></div>
+    </div>
+
+    <div class="container-first">
+        <h1> Jeu de cartes - Uno</h1>
+		<h3> Adrien Golebiewski </h3>
+        <div class="container-btns">
+            <button class="btn-first" onclick="window.location.href = 'http://localhost:3000/uploads/games/ProjetUno/ProjetUno/game.html';">Play</button>
+        </div>
+    </div>
+
+    <ul class="medias">
+		<li class="bulle"><a href="https://www.regledujeu.fr/uno/"><img src="ressourcesindex/interrogation.svg" href="https://www.regledujeu.fr/uno/"  class="logo-medias" width="310" height="220"></a></li>
+        <li class="bulle"><a href="https://www.youtube.com/watch?v=QPqRmIEG1Qc"><img src="ressourcesindex/yt.svg" class="logo-medias"></a></li>
+		<li class="bulle"><a href="https://www.facebook.com/JouezUNO"><img src="ressourcesindex/fb.svg" class="logo-medias"></a></li>
+		<li class="bulle"><a href="https://github.com/adriengoleb"><img src="ressourcesindex/github.svg" class="logo-medias"></a></li>
+    </ul>
+	
+	
+	<!-- Animation GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="index.js"></script>
+	
+	
+</body>
+</html>

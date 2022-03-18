@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fast Word Typing</title>
+
+    <!-- Styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="./assets/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Read the readme to use properly -->
+    <script src="./assets/wordlist.js"></script>
+    <script>
+        $(document).ready(() => {
+            let fwt = new FWT(data); // Start the script
+        });
+    </script>
+</head>
+<body>
+	<br/><br/><br/><br/><br/>
+	<div class="row" style="margin-left: 650pt"></div>
+    <div class="row" style="margin-left: 180pt">
+		
+        <div class="col-md-10 text-center" style="margin-top: 80pt;">
+			<div style="display:inline;"><p class="nb_mots" id="nb_mots">0/65210</p></div><br/><br/><br/>
+            <div style="display:inline;">
+                <p  class="w w1" id="w1"></p>
+                <p  class="w w2" id="w2"></p>
+                <p  class="w w3" id="w3"></p>
+                <p  class="w w4" id="w4"></p>
+                <p  class="w w1" id="w5"></p>
+            </div>
+            <form id="main-form" autocomplete="off">
+                <input type="text" id="main-input">
+            </form>
+        </div>
+        <div class="col-md-2" style="margin-top: 100pt;">
+            <div>
+                <p class="l l1" id="l1"></p>
+                <p class="l l2" id="l2"></p>
+                <p class="l l3" id="l3"></p>
+                <p class="l l4" id="l4"></p>
+                <p class="l l5" id="l5"></p>
+                <p class="l l6" id="l6"></p>
+            </div>
+        </div>
+		<br/>
+		<div class="col-md-2" style="width:45%; height:17%; margin-top:50px; margin-left: 270px;"><canvas id="line-chart"></canvas></div>
+    </div>
+	<br/><br/><br/><br/><br/><br/>
+	  
+    <script>
+    var chart=new Chart(document.getElementById("line-chart"), {
+    type: 'line',
+    data: {
+      labels: GlobalArrayX,
+      datasets: [{ 
+          data: GlobalArrayY1,
+          label: "Caractères par minute",
+          "borderColor": "#ddd",
+		  "lineTension":0.1,
+          fill: false,
+		  borderWidth: 1
+        },
+		{ 
+          data: GlobalArrayY2,
+          label: "Mots par minute",
+          borderColor: "#aaa",
+          fill: false,
+		  borderWidth: 1
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: false,
+        text: 'osef'
+      }
+    }
+  });
+ 
+    </script>
+	<div id="chrono"></div>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<div class="row">
+        <div class="col-6 text-center" style="margin-top: 100pt;">
+            <div style="display:inline-block;">
+                <form id="jump-form" autocomplete="off">
+                    <p class="jump-to">Jump to </p>
+                    <input type="text" id="jump-input" placeholder="">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

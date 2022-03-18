@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Trouve ta réincarnation</title>
+    </head>
+    <body>
+        <h1>Jeu : en quel animal seras-tu réincarné ?</h1>
+
+        <form id="testPersonnalite">
+            <label for="prenom">Dans un premier temps, quel est ton prénom ? </label>
+            <input type="text" id="prenom" name="prenom">
+            <br/><br/>
+            <label for="chFetiche">Quel est ton chiffre fétiche : </label>
+            <input type="number" id="chFetiche" name="chFetiche" min="1" max="12">
+            <br/><br/>
+            <label for="couleur">Dis nous quelle est ta couleur préférée : </label>
+            <input type="color" id="couleur" name="couleur">
+            <br/><br/>
+            <p>As-tu déjà consulté une voyante ? </p>
+            <input type="radio" id="voyanteOui" name="voyante" value="oui">
+            <label for="voyanteOui">Oui</label>
+            <input type="radio" id="voyanteNon" name="voyante" value="non">
+            <label for="voyanteNon">Non</label>
+            <br/><br/>
+            <label for="signeAstro">Quel est votre signe astrologique Chinois ? </label>
+            <select name="signeAstro" id="signeAstro">
+                <option value=""></option>
+                <option value="cochon">Cochon</option>
+                <option value="rat">Rat</option>
+                <option value="buffle">Buffle</option>
+                <option value="tigre">Tigre</option>
+                <option value="lapin">Lapin</option>
+                <option value="dragon">Dragon</option>
+                <option value="serpent">Serpent</option>
+                <option value="cheval">Cheval</option>
+                <option value="chevre">Chèvre</option>
+                <option value="singe">Singe</option>
+                <option value="coq">Coq</option>
+                <option value="chien">Chien</option>
+            </select>
+            <br/><br/>
+            <p>Quels sont tes animaux de compagnie ? </p>
+            <input type="checkbox" id="chien" name="animComp" value="chien">
+            <label for="chien">Chien</label>
+            <input type="checkbox" id="chat" name="animComp" value="chat">
+            <label for="chat">Chat</label>
+            <input type="checkbox" id="lapin" name="animComp" value="lapin">
+            <label for="lapin">Lapin</label>
+            <input type="checkbox" id="tortue" name="animComp" value="tortue">
+            <label for="tortue">Tortue</label>
+            <input type="checkbox" id="souris" name="animComp" value="souris">
+            <label for="souris">Souris</label>
+            <input type="checkbox" id="ane" name="animComp" value="ane">
+            <label for="ane">Âne</label>
+            <input type="checkbox" id="cheval" name="animComp" value="cheval">
+            <label for="cheval">Cheval</label>
+            <input type="checkbox" id="poisson" name="animComp" value="poisson">
+            <label for="poisson">Poisson</label>
+            <input type="checkbox" id="iguane" name="animComp" value="iguane">
+            <label for="iguane">Iguane</label>
+            <br/><br/><br/>
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <div id="reponse" style="display: none;">
+            <img id="img" src="" style="float: left;" width="300", height="200"/><h2 id="titreAnimal"></h2><p id="textReponse"></p>
+        </div>
+        <script src="resultat.js"></script>
+    </body>
+</html>

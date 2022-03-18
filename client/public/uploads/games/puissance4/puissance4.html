@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <meta charset="utf-8">
+    <title>Puissance4</title>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="gamegrid">
+        <table class="p4grid">
+            <tbody>
+                <tr>
+                    <td class="p4grid" id="cell0" onclick="getColumn(0)"></td>
+                    <td class="p4grid" id="cell1" onclick="getColumn(1)"></td>
+                    <td class="p4grid" id="cell2" onclick="getColumn(2)"></td>
+                    <td class="p4grid" id="cell3" onclick="getColumn(3)"></td>
+                    <td class="p4grid" id="cell4" onclick="getColumn(4)"></td>
+                    <td class="p4grid" id="cell5" onclick="getColumn(5)"></td>
+                    <td class="p4grid" id="cell6" onclick="getColumn(6)"></td>
+                </tr>
+                <tr>
+                    <td class="p4grid" id="cell7" onclick="getColumn(0)"></td>
+                    <td class="p4grid" id="cell8" onclick="getColumn(1)"></td>
+                    <td class="p4grid" id="cell9" onclick="getColumn(2)"></td>
+                    <td class="p4grid" id="cell10" onclick="getColumn(3)"></td>
+                    <td class="p4grid" id="cell11" onclick="getColumn(4)"></td>
+                    <td class="p4grid" id="cell12" onclick="getColumn(5)"></td>
+                    <td class="p4grid" id="cell13" onclick="getColumn(6)"></td>
+                </tr>
+                <tr>
+                    <td class="p4grid" id="cell14" onclick="getColumn(0)"></td>
+                    <td class="p4grid" id="cell15" onclick="getColumn(1)"></td>
+                    <td class="p4grid" id="cell16" onclick="getColumn(2)"></td>
+                    <td class="p4grid" id="cell17" onclick="getColumn(3)"></td>
+                    <td class="p4grid" id="cell18" onclick="getColumn(4)"></td>
+                    <td class="p4grid" id="cell19" onclick="getColumn(5)"></td>
+                    <td class="p4grid" id="cell20" onclick="getColumn(6)"></td>
+                </tr>
+                <tr>
+                    <td class="p4grid" id="cell21" onclick="getColumn(0)"></td>
+                    <td class="p4grid" id="cell22" onclick="getColumn(1)"></td>
+                    <td class="p4grid" id="cell23" onclick="getColumn(2)"></td>
+                    <td class="p4grid" id="cell24" onclick="getColumn(3)"></td>
+                    <td class="p4grid" id="cell25" onclick="getColumn(4)"></td>
+                    <td class="p4grid" id="cell26" onclick="getColumn(5)"></td>
+                    <td class="p4grid" id="cell27" onclick="getColumn(6)"></td>
+                </tr>
+                <tr>
+                    <td class="p4grid" id="cell28" onclick="getColumn(0)"></td>
+                    <td class="p4grid" id="cell29" onclick="getColumn(1)"></td>
+                    <td class="p4grid" id="cell30" onclick="getColumn(2)"></td>
+                    <td class="p4grid" id="cell31" onclick="getColumn(3)"></td>
+                    <td class="p4grid" id="cell32" onclick="getColumn(4)"></td>
+                    <td class="p4grid" id="cell33" onclick="getColumn(5)"></td>
+                    <td class="p4grid" id="cell34" onclick="getColumn(6)"></td>
+                </tr>
+                <tr>
+                    <td class="p4grid" id="cell35" onclick="getColumn(0)"></td>
+                    <td class="p4grid" id="cell36" onclick="getColumn(1)"></td>
+                    <td class="p4grid" id="cell37" onclick="getColumn(2)"></td>
+                    <td class="p4grid" id="cell38" onclick="getColumn(3)"></td>
+                    <td class="p4grid" id="cell39" onclick="getColumn(4)"></td>
+                    <td class="p4grid" id="cell40" onclick="getColumn(5)"></td>
+                    <td class="p4grid" id="cell41" onclick="getColumn(6)"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="scoreboard">
+        <table class="scoretable">
+            <tbody>
+                <tr>
+                    <td class="scoretable" id="idYellow">Jaune</td>
+                    <td class="scoretable" id="idRed">Rouge</td>
+                </tr>
+                <tr>
+                    <td class="scoretable" id="winYellow">0</td>
+                    <td class="scoretable" id="winRed">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <input type="button" value="Reset" onclick="reset()">
+    </div>
+    <div class="statusinfo">
+        <h2 id="status">
+            C'est au joueur JAUNE de jouer.
+        <h2>
+        <p>Créé par Thomas Lepercq / septembre 2019</p>
+    </div>
+    
+</body>
+
+</html>

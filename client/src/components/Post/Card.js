@@ -91,7 +91,7 @@ const Card = ({post}) => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
                                 title={post._id}
-                            ></iframe>
+                            />
                         )}
                         {userData._id === post.posterId && (
                             <div className="button-container">
