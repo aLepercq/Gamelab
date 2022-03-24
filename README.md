@@ -10,7 +10,7 @@ Site web centré sur le gaming proposant des jeux 'flash' et un espace de partag
 
 ## Installation
 * Récuperer le code depuis github.
-* Ajouter le fichier .env au répertoire
+* Ajouter le fichier .env au répertoire config
 * Lancer le server :
   * Ouvrir un terminal sur VScode / IntelliJ
   * se mettre à la racine du projet
