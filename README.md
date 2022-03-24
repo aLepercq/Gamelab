@@ -4,7 +4,7 @@ Site web centré sur le gaming proposant des jeux 'flash' et un espace de partag
 * https://github.com/aLepercq/Gamelab/wiki/Guide-Utilisateur
 * https://github.com/aLepercq/Gamelab/wiki/Guide-de-Maintenance
 
-![logo](https://media.giphy.com/media/nCpFrzZpV43VFh5N1u/giphy.gif)
+![logo](https://giphy.com/embed/nCpFrzZpV43VFh5N1u/giphy.gif)
 
 ## Installation
 * Récuperer le code depuis github.
